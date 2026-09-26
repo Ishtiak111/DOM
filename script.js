@@ -8,7 +8,7 @@ console.log(allInput);
 console.log(ph);
 
 // Modern way
-const bd2 = document.querySelector("#bd");
+let bd2 = document.querySelector("#bd");
 const ph2 = document.querySelector(".ph");
 const allInput2 = document.querySelector("input");
 const allInput3 = document.querySelectorAll("input");
@@ -45,5 +45,23 @@ img.classList.toggle("box");
 
 const clickbtn = document.getElementById("click-btn");
 clickbtn.addEventListener("click", () => {
-  img.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBB4LQTn0vRq4ydPLp-uTj_lEUHOHYWUU18JlCq5KuMw&s=10";
+  img.src =
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBB4LQTn0vRq4ydPLp-uTj_lEUHOHYWUU18JlCq5KuMw&s=10";
 });
+// console.log(innerWidth);
+
+// SetInterval
+let count = 0;
+let interval = setInterval(() => {
+  count++;
+  console.log(count);
+  bd2.innerHTML = `<h2>${count}</h2>`;
+  if (count === 10) {
+    clearInterval(interval);
+  }
+}, 1000);
+
+// Set TimeOut:
+setTimeout(() => {
+  ph2.innerText = "JS";
+}, 5000);
