@@ -65,3 +65,7 @@ let interval = setInterval(() => {
 setTimeout(() => {
   ph2.innerText = "JS";
 }, 5000);
+
+localStorage.setItem("location", "Gazipur");
+let loc = localStorage.getItem("location");
+console.log(loc)
