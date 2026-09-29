@@ -1,4 +1,4 @@
-let image = ["assects/img1.jpg", "assects/img2.jpg", "assects/img3.jpg"]
+let image = ["../assects/img1.jpg", "../assects/img2.jpg", "../assects/img3.jpg"]
 let displayImg = document.querySelector("img");
 let count = 0;
 function prev (){
