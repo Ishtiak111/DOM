@@ -9,7 +9,7 @@ let count = 0;
 
 function prev() {
   if (count <= 0) {
-    count = 2;
+    count = photos.length-1;
   } else {
     count--;
   }
