@@ -45,3 +45,25 @@ let heading01 = document.getElementsByTagName("h1")[0];
 heading01.classList.add("cls");
 heading01.classList.remove("myClass");
 console.log(heading01.classList);
+
+
+// select downwards:
+let myDiv2 = document.getElementById("my-div");
+myDiv2.getElementsByTagName("h1")[0].innerHTML="Wellcome" //selected downwards
+
+
+// select upwards:
+let student_a = document.querySelector("li");
+let studentList = student_a.parentElement;   //Selected upwards
+studentList.style.border="2px solid red"
+
+let body1 = studentList.parentElement;  //Selected upwards
+body1.style.backgroundColor="skyblue"
+
+
+// sideways:
+let student_A = document.querySelector("li");
+let student_b = student_A.nextElementSibling;   // sideways
+student_b.style.color="red";
+let student_c = student_b.nextElementSibling;  // sideways
+student_c.style.color="blue";
