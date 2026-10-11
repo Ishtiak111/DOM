@@ -1,0 +1,7 @@
+.my-para{
+    color: rgb(0, 94, 235);
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+    transition: 0.5s;
+}
