@@ -22,3 +22,7 @@ function audioPlay(text) {
       break;
   }
 }
+
+
+let x
+console.log(x);
